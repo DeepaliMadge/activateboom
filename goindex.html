@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&amp;display=swap" rel="stylesheet"> -->
+    
+	 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Go boom!</title>
+    
+    
+    <link href="/MetronicCSS?v=Xwv8eEkMa4xU1otzy0SgDrGIZx5VCtRV8LKD2Wkh0Mc1" rel="stylesheet"/>
+
+
+    <style>
+
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+        #divLoading {
+            display: none;
+        }
+
+            #divLoading.show {
+                display: block;
+                position: fixed;
+                z-index: 100;
+                background-image: url('/Content/Image/fancybox_loading.gif');
+                background-color: #666;
+                opacity: 0.4;
+                background-repeat: no-repeat;
+                background-position: center;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                top: 0;
+            }
+
+        #loadinggif.show {
+            left: 50%;
+            top: 50%;
+            position: absolute;
+            z-index: 101;
+            width: 32px;
+            height: 32px;
+            margin-left: -16px;
+            margin-top: -16px;
+        }
+
+        div.content {
+            width: 1000px;
+            height: 1000px;
+        }
+    </style>
+
+    <link href="/Content/Metronic/Demo1/Assets/css/style.bundle.css" rel="stylesheet" />
+    <script type='text/javascript'>
+        window.smartlook || (function (d) {
+            var o = smartlook = function () { o.api.push(arguments) }, h = d.getElementsByTagName('head')[0];
+            var c = d.createElement('script'); o.api = new Array(); c.async = true; c.type = 'text/javascript';
+            c.charset = 'utf-8'; c.src = 'https://rec.smartlook.com/recorder.js'; h.appendChild(c);
+        })(document);
+        smartlook('init', 'd06aeb34c56037175a778c20316178102b0ac430');
+    </script>
+
+
+
+</head>
+<body>
+    <div class="row" style="background-color:#2172AF;height:5%;margin-bottom:3em;margin-right: 0;margin-left: 0;">
+        <div class="container-bar section"></div>
+        <div id="header" class="layout-zone-header layout-zone subsection ">
+            <div id="logo"><a href="/"><img class="image-logo " style="width: auto;max-height: 80px;z-index: 1;" src="./assets/media/logos/Logo_BBD (1).png" alt="Logo"></a></div>
+
+        </div>
+        <div class="container">
+            
+            <div id="divLoading">
+            </div>
+
+        </div>
+    </div>
+    <div class="container body-content">
+        
+
+
+<style>
+    .simBluebtn {
+        background-color: #2172AF;
+        border: 1px solid rgba(220,220,220,0.75);
+        border-radius: 6px;
+        box-shadow: 1px 2px 1px 0 rgba(0,0,0,0.15);
+        color: #fff;
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.25em;
+        font-weight: 300;
+        margin: 0;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.25s ease-in-out
+    }
+
+    .simRedbtn {
+        background-color: #ee3030;
+        border: 1px solid rgba(220,220,220,0.75);
+        border-radius: 6px;
+        box-shadow: 1px 2px 1px 0 rgba(0,0,0,0.15);
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5em;
+        font-weight: 300;
+        margin: 0;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.25s ease-in-out 0s;
+    }
+</style>
+<div class="kt-portlet" style="margin-top:5%">
+    <div class="kt-portlet__head">
+        <div class="kt-portlet__head-label">
+
+            <h3 class="kt-portlet__head-title">
+                Do you have a boom! MOBILE Sim Card?
+            </h3>
+        </div>
+    </div>
+    <div class="kt-portlet__body">
+        <div class="kt-pricing-4 kt-pricing-4--fixed">
+            <div class="kt-pricing-4__items">
+                <div class="row row-no-padding">
+                    <div class="kt-pricing-4__item col-lg-12">
+                        <div class="kt-pricing-4__wrapper" align="center">
+                            <h3 class="kt-pricing-4__title">I have a Sim Card</h3>
+                            <img src="/Content/Image/sim.png" />
+                            <div class="kt-pricing-4__btn" style="margin-top:10%">
+                                
+                                <button type="button" onclick="Check('a');" class="simBluebtn">Continue</button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    function Check(a) {
+        if (a === 'a')
+            window.location.href = "/Home/Sim";
+        else window.location.href = "https://www.boom.us/plans";
+    }
+   
+</script>
+
+        <hr />
+        
+    </div>
+    <div class="modal fade" id="unlockModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="padding-right: 17px;" aria-modal="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="kt-portlet">
+                    <div class="kt-portlet__head">
+                        <div class="kt-portlet__head-label">
+                            <h3 class="kt-portlet__head-title">
+                                Unlocked Devices
+                            </h3>
+                        </div>
+
+                    </div>
+                    <div class="kt-portlet__head" style="border-bottom: 0px solid white;">
+                        <div class="row">
+
+
+                            <div class="col-md-12 my-2">
+                                <h5 class="text-body font-weight-bold">
+                                    What is unlocked devices?
+                                </h5>
+                            </div>
+                            <div class="col-md-12 my-2">
+                                <h5 class="text-body mb-0">
+                                    An unlocked cell phone or tablet is not tied to any specific wireless carrier.
+                                    This means you can use it with any wireless provider, as long as they have a similar network.
+                                    (Purchase of a service plan and a SIM card required).
+
+                                    Most cell phones and tablets that use SIM cards are sold locked,
+                                    which means they are programmed to only work with the original carrier.
+                                    To get a device unlocked, contact the original wireless carrier.
+                                    They will usually unlock it for you as long as you meet the requirements.
+                                </h5>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="kt-portlet__head">
+                        <div class="row">
+
+                            <div class="col-md-12 my-2">
+                                <h5 class="text-body font-weight-bold">
+                                    How do I know if my phone is unlocked?
+                                </h5>
+                            </div>
+                            <div class="col-md-12">
+                                <h5 class="text-body mb-0">
+                                    To test your phone, try borrowing a SIM card from a friend
+                                    who's on a different wireless carrier and insert it into your phone.
+                                    If you are able to make and receive calls, then your phone is probably unlocked.*
+
+                                    *boom! MOBILE can't guarantee that just because your phone works with a different carrier
+                                    it is unlocked and will work on our network.
+                                </h5>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/MetronicJS?v=KshDPUzNw6aq1wDghzFoCxm0MVU7HfSh_szdZ1C2G1M1"></script>
+
+
+    <script src="/Scripts/jquery.creditCardValidator.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+    <script type="text/javascript">
+        (function (d, src, c) { var t = d.scripts[d.scripts.length - 1], s = d.createElement('script'); s.id = 'la_x2s6df8d'; s.async = true; s.src = src; s.onload = s.onreadystatechange = function () { var rs = this.readyState; if (rs && (rs != 'complete') && (rs != 'loaded')) { return; } c(this); }; t.parentElement.insertBefore(s, t.nextSibling); })(document,
+            'https://support.boom.us/scripts/track.js',
+            function (e) { LiveAgent.createButton('8pdl90pv', e); });
+    </script>
+    <script>
+        WebFont.load({
+            google: { "families": ["Poppins:300,400,500,600,700"] },
+            active: function () {
+                sessionStorage.fonts = true;
+            }
+        });
+    </script>
+    <script>
+        var KTAppOptions = {
+            "colors": {
+                "state": {
+                    "brand": "#5d78ff",
+                    "metal": "#c4c5d6",
+                    "light": "#ffffff",
+                    "accent": "#00c5dc",
+                    "primary": "#5867dd",
+                    "success": "#34bfa3",
+                    "info": "#36a3f7",
+                    "warning": "#ffb822",
+                    "danger": "#fd3995",
+                    "focus": "#9816f4"
+                },
+                "base": {
+                    "label": [
+                        "#c5cbe3",
+                        "#a1a8c3",
+                        "#3d4465",
+                        "#3e4466"
+                    ],
+                    "shape": [
+                        "#f0f3ff",
+                        "#d9dffa",
+                        "#afb4d4",
+                        "#646c9a"
+                    ]
+                }
+            }
+        };
+
+
+    </script>
+
+    
+</body>
+
+</html>
+
